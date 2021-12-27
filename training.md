@@ -43,4 +43,46 @@ MEVN - Mongo Express Vue Node
 
 
 # TypeScript
+> npm install typescript -g
+> tsc <filename> -> generate JavaScript Code
+
+# Why TypeScript?
+- Extension of JavaScript by Microsoft
+- ES2015+ features
+- Object-oriented System
+- Type Definition
+- Angular itself programmed in typescript
+
+# JavaScript DataTypes : 
+- number
+- string
+- boolean
+- date
+- object
+- array
+- function
+
+# Typescript Types :
+- any
+- unknown
+- null
+- undefined
+- enum
+- custom types :
+    - class 
+    - interface 
+    - type keyword
+
+
+# Angular Building blocks
+1. Components : reusable piece of code for creating the UI/View
+    - ES6 Class with @Component()
+2. Directives : to apply UI Logic
+    - ES6 Class with @Directive()
+3. Pipes : to tranform/format the data/model
+    - ES6 class with @Pipe()
+4. Services : App Business Logic
+    - ES6 class with @Injectable()
+5. Modules : Container for interrelated piece of code
+    - ES6 class with @NgModule()
 
