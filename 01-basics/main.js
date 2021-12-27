@@ -267,3 +267,15 @@
 
 
 // > Classes and Modules
+class Student{
+    constructor(email, age){
+        this.email = email;
+        this.age = age;
+    }
+    getDetails () {
+        return `Hello from ${this.email}, I'm ${this.age} years old!`;
+    }
+}
+
+let foo = new Student("foo@test.com", 32);
+console.log(foo.getDetails())
