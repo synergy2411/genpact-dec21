@@ -267,15 +267,64 @@
 
 
 // > Classes and Modules
-class Student{
-    constructor(email, age){
-        this.email = email;
-        this.age = age;
-    }
-    getDetails () {
-        return `Hello from ${this.email}, I'm ${this.age} years old!`;
+// class Student{
+//     constructor(email, age){
+//         this.email = email;
+//         this.age = age;
+//     }
+//     getDetails () {
+//         return `Hello from ${this.email}, I'm ${this.age} years old!`;
+//     }
+// }
+
+// let foo = new Student("foo@test.com", 32);
+// console.log(foo.getDetails())
+
+
+
+
+// Promises / Async...await
+// - are used for handling JS Asynchronous behaviour
+// - complex calculation e.g [1500 * 1500] [2S-3S]
+// - Read/Writing (I/O) 
+// - Timers (setTimeout, setImmediate, setInterval)
+
+// Producer Code
+
+const delay = (ms) => {
+    const promise = new Promise((resolve, reject)=>{
+        setTimeout(() => {
+            if(ms >= 4000){
+                reject({err : "Taking longer time"})
+            }else{
+                resolve({message : "SUCCESS"})
+            }
+        }, ms)
+    })
+    return promise;
+}
+
+// Consumer Code
+
+const app = async () => {
+    try{
+        const result = await delay(4500)
+        console.log(result);
+    }catch(err){
+        console.log("ERROR - ", err)
     }
 }
 
-let foo = new Student("foo@test.com", 32);
-console.log(foo.getDetails())
+app();
+
+// const app = () => {
+//     delay(4500)
+//         .then(response => {
+//             console.log(response);
+//         })
+//         .catch(err => {
+//             console.log(err)
+//         })
+// }
+
+// app();
