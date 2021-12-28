@@ -76,13 +76,43 @@ MEVN - Mongo Express Vue Node
 
 # Angular Building blocks
 1. Components : reusable piece of code for creating the UI/View
-    - ES6 Class with @Component()
+    - ES6 Class with @Component({})
 2. Directives : to apply UI Logic
-    - ES6 Class with @Directive()
+    - ES6 Class with @Directive({})
 3. Pipes : to tranform/format the data/model
     - ES6 class with @Pipe()
 4. Services : App Business Logic
     - ES6 class with @Injectable()
 5. Modules : Container for interrelated piece of code
     - ES6 class with @NgModule()
+
+# Handling Async Tasks in JavaScript -
+- Callback functions
+- Promises
+- Async...await
+- Observable
+
+# Angular Project - Angular CLI Tool
+> npm uninstall @angular/cli -g
+> npm install -g @angular/cli@11
+> ng --version
+> ng new <project-name> / users-app
+> cd users-app
+> npm run start 
+
+
+# JavaScript Libraries and Framework
+- *Angular : Supports all client-side feature, Sponsured by Google, CLI tooling, XHR Calls Angular Compiler (Ahead-Of-Time Compilation), Complex architecture, heavy build, enterprise level apps etc
+- *Ember : Supports all features on client side
+- Angular_v1.x : Library; AngularJS
+- React : Virtual DOM, Light-weight, sponsured by Facebook, Great community support
+- jQuery : DOM Manipulation, AJAX, Animation
+- Backbone : MVC Model at client side
+- Polymer : Create Custom Elements
+- D3JS : Creates graphs
+- Knockout : Efficient 2 way data binding, MVVM
+- Vue : Template oriented, Evan You, emerging in JS market
+- NodeJS : Server-Side Platform
+- Express : Server side framework
+
 
