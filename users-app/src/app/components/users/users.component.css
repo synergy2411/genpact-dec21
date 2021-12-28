@@ -1,3 +1,9 @@
 h4{
   color: blueviolet;
 }
+
+.my-list{
+  margin-bottom: 10px;
+  box-shadow: darkgrey 4px 5px;
+  border-radius: 5%;
+}

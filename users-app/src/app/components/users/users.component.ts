@@ -14,4 +14,7 @@ export class UsersComponent{
     isWorking : true,
     company : "Microsoft"
   }
+  onMoreInfo(usr : any){
+    alert(`This is ${usr.lastName}, ${usr.firstName}`)
+  }
 }

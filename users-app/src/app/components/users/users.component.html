@@ -1,7 +1,8 @@
 <h4>Component Coming form HTML file</h4>
 
-<ul>
-  <li>
+<ul class="list-group">
+  <li class="list-group-item my-list">
+    <button class="btn btn-info" (click)="onMoreInfo(user)">More Info</button>
     <h5>{{user.firstName}} {{user.lastName}}</h5>
     <p>Date of Birth : <span [innerText]="user.dob"></span> </p>
     <p>Income : <span [innerText]="user.income"></span></p>
