@@ -12,7 +12,9 @@ export class UsersComponent{
     dob : new Date("Jan 1, 1965"),
     income : 50000,
     isWorking : true,
-    company : "Microsoft"
+    company : "Microsoft",
+    image : "./assets/images/bill.jpg",
+    votes : 120
   }
   onMoreInfo(usr : any){
     alert(`This is ${usr.lastName}, ${usr.firstName}`)

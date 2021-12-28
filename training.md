@@ -100,6 +100,9 @@ MEVN - Mongo Express Vue Node
 > cd users-app
 > npm run start 
 
+> ng generate component path/to/component/ComponentName
+> ng g c components/users/user-image 
+> npx
 
 # JavaScript Libraries and Framework
 - *Angular : Supports all client-side feature, Sponsured by Google, CLI tooling, XHR Calls Angular Compiler (Ahead-Of-Time Compilation), Complex architecture, heavy build, enterprise level apps etc

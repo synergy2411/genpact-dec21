@@ -2,9 +2,14 @@
 
 <ul class="list-group">
   <li class="list-group-item my-list">
-    <button class="btn btn-info" (click)="onMoreInfo(user)">More Info</button>
-    <h5>{{user.firstName}} {{user.lastName}}</h5>
-    <p>Date of Birth : <span [innerText]="user.dob"></span> </p>
-    <p>Income : <span [innerText]="user.income"></span></p>
+    <div class="row">
+      <div class="col-3 text-center">
+        <app-user-image [user]="user"
+          (childEvent)="onMoreInfo($event)"></app-user-image>
+      </div>
+      <div class="col-9">
+          <app-user-info [user]="user"></app-user-info>
+      </div>
+    </div>
   </li>
 </ul>
