@@ -1,4 +1,10 @@
 <div class="container">
   <h2>App Component Loaded....</h2>
-  <app-users></app-users>
+  <!-- <button class="btn btn-warning"
+    (click)="showComp = !showComp">Toggle Comp</button>
+
+  <app-life-cycle-demo *ngIf="showComp"
+    [title]="appTitle"></app-life-cycle-demo> -->
+
+  <app-users [title]="appTitle"></app-users>
 </div>

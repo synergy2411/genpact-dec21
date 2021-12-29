@@ -119,3 +119,6 @@ MEVN - Mongo Express Vue Node
 - Express : Server side framework
 
 
+# Component Types
+- Smart/ Parent/ Container : contains other components, business logic. eg. UsersComponent, AppComponent
+- Dump/ Child/ Presentational : don't have any business logic, receive the data from parent, they create the UI. eg. UserImageComponent, UserInfoComponent
