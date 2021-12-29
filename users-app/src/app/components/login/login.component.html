@@ -17,10 +17,13 @@
       <div class="form-group">
         <div class="row">
           <div class="col-6 d-grid gap-1">
-            <button class="btn btn-success btn-sm" (click)="onLogin(loginForm)" >Login</button>
+            <button class="btn btn-success btn-sm"
+              (click)="onLogin(loginForm)"
+              [disabled]="loginForm.invalid">Login</button>
           </div>
           <div class="col-6 d-grid gap-1">
-            <button class="btn btn-warning btn-sm btn-block" type="button">Reset</button>
+            <button class="btn btn-warning btn-sm btn-block"
+              type="button">Reset</button>
           </div>
         </div>
       </div>

@@ -102,7 +102,7 @@ MEVN - Mongo Express Vue Node
 
 > ng generate component path/to/component/ComponentName
 > ng g c components/users/user-image 
-> npx
+> ng g p pipes/country-code
 
 # JavaScript Libraries and Framework
 - *Angular : Supports all client-side feature, Sponsured by Google, CLI tooling, XHR Calls Angular Compiler (Ahead-Of-Time Compilation), Complex architecture, heavy build, enterprise level apps etc
@@ -122,3 +122,36 @@ MEVN - Mongo Express Vue Node
 # Component Types
 - Smart/ Parent/ Container : contains other components, business logic. eg. UsersComponent, AppComponent
 - Dump/ Child/ Presentational : don't have any business logic, receive the data from parent, they create the UI. eg. UserImageComponent, UserInfoComponent
+
+
+
+
+# Reference / Primitive types
+- Reference - Objects, Array, Functions, Date
+- Primitive - String, Boolean, Number
+
+let userOne = {
+    name :"Foo"
+}
+
+<!-- Impure Change -->
+userOne.name = "Bar";
+
+console.log(userOne.name);      // "Bar"
+
+<!-- Pure Change -->
+userOne = {
+    name : "Bam"
+}
+
+let books = ["book1","book2"];
+
+pure : false
+
+books.push("book3");
+
+
+books = ["book1", "book2", "book3"]         // will run
+
+books = ["book1", "book2", "book3"]        // will run
+books.push("book3");                        // will not run
