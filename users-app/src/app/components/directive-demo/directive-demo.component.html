@@ -1,0 +1,44 @@
+<p class="display-4">Directive Demo Component</p>
+
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let todo of todoCollection">
+    {{ todo.label }}
+    <span class="badge bg-primary" *ngIf="todo.status==='pending'">
+      {{ todo.status }}
+    </span>
+  </li>
+</ul>
+<hr>
+
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link" (click)="tab=1">One</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" (click)="tab=2">Two</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" (click)="tab=3">Three</a>
+  </li>
+</ul>
+
+<div [ngSwitch]="tab">
+  <div *ngSwitchCase="0">Output 0</div>
+  <div *ngSwitchCase="1">Output 1</div>
+  <div *ngSwitchCase="2">Output 2</div>
+  <div *ngSwitchDefault>Default Output</div>
+</div>
+
+
+
+
+
+<hr />
+<!-- <p [ngClass]="['my-border', 'my-font']">Label : {{label}} </p> -->
+<!-- <p [ngClass]="{'my-border' : false, 'my-font' : true}">Label : {{label}} </p> -->
+<p [ngClass]="classes">Label : {{ label }}</p>
+
+<p [ngStyle]="styles">Username : {{ username }}</p>
+
+<button class="btn btn-secondary" (click)="onToggle()">Toggle Classes</button>
