@@ -1,6 +1,6 @@
-<h5>{{ user.firstName }} {{ user.lastName }}</h5>
-<p>Date of Birth : <span [innerText]="user.dob"></span></p>
-<p>Income : <span [innerText]="user.income"></span></p>
+<h5>{{ user.firstName | titlecase }} {{ user.lastName | titlecase }}</h5>
+<p>Date of Birth : <span [innerText]="user.dob | date : 'dd/MM/yyyy' "></span></p>
+<p *ngIf="user.isWorking">Income : <span [innerText]="user.income | currency : 'EUR'"></span></p>
 <p>
   Total Votes : {{ user.votes }}
   <input type="number" [(ngModel)]="user.votes" />

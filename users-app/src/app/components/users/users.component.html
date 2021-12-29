@@ -3,7 +3,7 @@
 <h4 class="text-center">{{title}}</h4>
 
 <ul class="list-group">
-  <li class="list-group-item my-list">
+  <li class="list-group-item my-list" *ngFor="let user of users">
     <div class="row">
       <div class="col-3 text-center">
         <app-user-image [user]="user"
