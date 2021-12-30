@@ -201,3 +201,10 @@ books.push("book3");                        // will not run
 - Services
 - HttpClient [XMLHttpRequest Calls / Remote Server Calls]
 - Observables - "rxjs"
+
+
+
+- Self Service Registration - 'providedIn' property
+
+# angular-in-memory-web-api : Endpoints
+> npm install angular-in-memory-web-api

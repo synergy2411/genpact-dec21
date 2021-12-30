@@ -2,6 +2,7 @@ import { IUser } from './user.model';
 
 export const USER_DATA: Array<IUser> = [
   {
+    id : 101,
     firstName: 'bill',
     lastName: 'gates',
     dob: new Date('Jan 1, 1965'),
@@ -12,6 +13,7 @@ export const USER_DATA: Array<IUser> = [
     votes: 120,
   },
   {
+    id : 102,
     firstName: 'steve',
     lastName: 'jobs',
     dob: new Date('Dec 10, 1965'),
@@ -22,6 +24,7 @@ export const USER_DATA: Array<IUser> = [
     votes: 180,
   },
   {
+    id : 103,
     firstName: 'tim b.',
     lastName: 'lee',
     dob: new Date('Aug 21, 1965'),
