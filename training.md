@@ -155,3 +155,49 @@ books = ["book1", "book2", "book3"]         // will run
 
 books = ["book1", "book2", "book3"]        // will run
 books.push("book3");                        // will not run
+
+
+
+- Component Life Cycle Methods
+: onChanges
+: onInit
+: doCheck
+: afterContentInit
+: afterContentChecked
+: afterViewInit
+: afterViewChecked
+: onDestroy
+
+- Directives
+: Attribute - Can't change DOM template, add/remove styles/classes [ngClass, ngStyle]
+: Structural - DOM template changed, [*ngFor, *ngIf, *ngSwitch]
+
+- Pipes : to format the UI
+: titlecase
+: uppercase
+: lowercase
+: date
+: currency
+: percent
+: json
+: async - hold the state, waiting....
+: Custom Pipe - CountryCode, Reverse 
+    - Pure -> runs on Pure changes
+    - Impure -> run on both pure and impure changes
+
+- Forms
+: Template Driven [ngModel -> FormsModule]
+    - Validation logic inside template
+    - HTML validations
+    - complete form is referred as "ngForm"
+    - States / Classes
+        : ngValid / ngInvalid
+        : ngTouched / ngUntouched
+        : ngDirty / ngPristine
+: Model Driven / Reactive Form
+
+
+- Reactive Forms
+- Services
+- HttpClient [XMLHttpRequest Calls / Remote Server Calls]
+- Observables - "rxjs"

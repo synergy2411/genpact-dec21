@@ -13,12 +13,36 @@
             <label for="email">Email:</label>
             <input type="text" class="form-control"
               name="email" [formControl]="username">
+              <div class="alert alert-danger"
+                [hidden]="username.valid || username.untouched">
+                - Something wrong with email field.
+                <div [hidden]="!username.hasError('required')">
+                  * Email is mandatory field
+                </div>
+                <div [hidden]="!username.hasError('email')">
+                  * Value should be in proper email format
+                </div>
+              </div>
           </div>
           <!-- Password -->
           <label for="password">Password:</label>
           <input type="password" name="password"
             class="form-control" [formControl]="password">
+            <div class="alert alert-danger" [hidden]="password.valid || password.untouched">
+              - Some problem with password.
+              <div [hidden]="!password.hasError('minlength')">
+                * Password must contain 6 characters at least
+              </div>
+              <div [hidden]="!password.hasError('needExclamation')">
+                * Password must contain Exclamation Mark (!)
+              </div>
+            </div>
           <br>
+            <label for="address">Address:</label>
+            <textarea name="address" rows="10"
+              class="form-control"
+              formControlName="address"></textarea>
+
           <!-- Buttons -->
           <div class="row">
             <div class="col-6 d-grid gap-1">

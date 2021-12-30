@@ -1,0 +1,15 @@
+.ng-dirty.ng-invalid[name="email"]{
+  background-color: lightcoral;
+}
+.ng-dirty.ng-valid[name="email"]{
+  background-color: lightgreen;
+}
+.ng-touched.ng-dirty.ng-valid[name="email"]{
+  background-color: transparent;
+}
+.ng-dirty.ng-invalid[name="password"]{
+  background-color: lightcoral;
+}
+.ng-dirty.ng-valid[name="password"]{
+  background-color: lightgreen;
+}
