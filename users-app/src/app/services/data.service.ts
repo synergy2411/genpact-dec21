@@ -2,7 +2,9 @@ import { Injectable } from "@angular/core";
 import { HttpClient } from '@angular/common/http';
 import { USER_DATA } from "../model/mock";
 
-@Injectable()
+@Injectable({
+  providedIn : 'root'
+})
 export class DataService {
 
   constructor(private httpClient : HttpClient){}
@@ -17,6 +19,5 @@ export class DataService {
         console.log(response)
       })
   }
-
 
 }
