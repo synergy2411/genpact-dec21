@@ -7,20 +7,23 @@
         </p>
       </div>
       <div class="card-body">
-        <form>
+        <form [formGroup]="registerForm">
           <!-- Email -->
           <div class="form-group">
             <label for="email">Email:</label>
-            <input type="text" class="form-control" name="email">
+            <input type="text" class="form-control"
+              name="email" [formControl]="username">
           </div>
           <!-- Password -->
           <label for="password">Password:</label>
-          <input type="password" name="password" class="form-control">
+          <input type="password" name="password"
+            class="form-control" [formControl]="password">
           <br>
           <!-- Buttons -->
           <div class="row">
             <div class="col-6 d-grid gap-1">
-              <button class="btn btn-primary btn-block btn-sm">Register</button>
+              <button class="btn btn-primary btn-block btn-sm"
+                (click)="onRegister()">Register</button>
             </div>
             <div class="col-6 d-grid gap-1">
               <button class="btn btn-warning btn-block btn-sm">Reset</button>
