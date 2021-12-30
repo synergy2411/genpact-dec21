@@ -11,7 +11,13 @@ export class PipeDemoComponent implements OnInit {
 
   promise = new Promise((resolve, reject)=>{
     setTimeout(()=>{
-      resolve("Here the data comes...")
+      const random = Math.round(Math.random() * 1000);
+      console.log("RANDOM : ", random);
+      if(random >= 60){
+        resolve("Here the data comes...")
+      }else{
+        reject(new Error("Less then 60"))
+      }
     }, 3000)
   })
 

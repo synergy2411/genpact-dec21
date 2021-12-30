@@ -12,6 +12,7 @@ import { PipeDemoComponent } from './components/pipe-demo/pipe-demo.component';
 import { CountryCodePipe } from './pipes/country-code.pipe';
 import { ReversePipe } from './pipes/reverse.pipe';
 import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [     // Components, Directives, Pipes
@@ -24,7 +25,8 @@ import { LoginComponent } from './components/login/login.component';
     PipeDemoComponent,
     CountryCodePipe,
     ReversePipe,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [          // Module - built-in / Custom module
     BrowserModule,
