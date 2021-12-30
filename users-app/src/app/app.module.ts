@@ -14,6 +14,7 @@ import { UserInfoComponent } from './components/users/user-info/user-info.compon
 import { UsersComponent } from './components/users/users.component';
 import { CountryCodePipe } from './pipes/country-code.pipe';
 import { ReversePipe } from './pipes/reverse.pipe';
+import { ObservableDemoComponent } from './components/observable-demo/observable-demo.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ReversePipe } from './pipes/reverse.pipe';
     CountryCodePipe,
     ReversePipe,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    ObservableDemoComponent
   ],
   imports: [          // Module - built-in / Custom module
     BrowserModule,

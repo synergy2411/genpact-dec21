@@ -1,0 +1,12 @@
+<p class="display-4">Observable Demo Component</p>
+
+<button class="btn btn-primary" (click)="onSubscribe()">Subscribe</button>
+<button class="btn btn-warning" (click)="onUnsubcribe()">Unsubscribe</button>
+
+<hr>
+
+<ul>
+  <li *ngFor="let pkg of packages">
+    {{pkg}}
+  </li>
+</ul>

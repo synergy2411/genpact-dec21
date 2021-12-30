@@ -9,15 +9,19 @@ export class DataService {
 
   constructor(private httpClient : HttpClient){}
 
-  getData(){
-    return USER_DATA;
-  }
+  // getData(){
+  //   return USER_DATA;
+  // }
 
   getApiData(){
-    this.httpClient.get("https://jsonplaceholder.typicode.com/todos")
-      .subscribe(response => {
-        console.log(response)
-      })
+    return this.httpClient.get("assets/data/users.json")
+  }
+
+  createPost(){
+    this.httpClient.post("https://jsonplaceholder.typicode.com/todos", {
+      title : "...",
+      completed : false
+    }).subscribe(response => console.log(response))
   }
 
 }

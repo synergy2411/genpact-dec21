@@ -208,3 +208,12 @@ books.push("book3");                        // will not run
 
 # angular-in-memory-web-api : Endpoints
 > npm install angular-in-memory-web-api
+
+# Observable - 
+- Observers Data Source
+- Stream on which event emitted at certain time interval
+- Cancel/Unsubscribe the observable
+- Publisher : publish event on the stream (input value, get/post, route, triggered in code)
+- Consumer/Observer/Subscriber : subscribe the emitted data on the stream
+
+Promise : are one shot
