@@ -217,3 +217,53 @@ books.push("book3");                        // will not run
 - Consumer/Observer/Subscriber : subscribe the emitted data on the stream
 
 Promise : are one shot
+
+
+
+
+
+const position = notes.findIndex(() => {})
+notes.splice(position, 1)
+
+
+
+- Model Driven Forms
+: Custom Validation
+: Angular Validation
+: Apply Validation on Model
+: Sync forms
+: FormControl, FormGroup, FormBuilder
+
+- Services 
+: Singleton
+: DIP & SRP
+: ES6 Classes with @Injectable()
+: Controlled by Modules/Component (providers : [])
+
+- HttpClientModule -> HttpClient -> GET | POST etc
+- Observable -> Stream on which data emitted at certain time interval
+
+- Observable Operators
+- Interceptors - inspect the outgoing request and incoming response
+- Create SPA using Angular Router
+- Modules
+
+
+# Observable Types
+- Subject
+- BehaviourSubject
+- AsyncSubject
+- ReplaySubject
+
+# Observable Operators
+- map
+- take
+- tap
+- skip
+- debounce
+- throttle
+- of
+- from
+- fromEvent
+- concat
+- fork

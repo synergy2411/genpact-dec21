@@ -1,6 +1,8 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from '@angular/common/http';
 import { USER_DATA } from "../model/mock";
+import { Observable } from "rxjs";
+import { IUser } from "../model/user.model";
 
 @Injectable({
   providedIn : 'root'
@@ -13,8 +15,8 @@ export class DataService {
   //   return USER_DATA;
   // }
 
-  getApiData(){
-    return this.httpClient.get("assets/data/users.json")
+  getApiData(): Observable<Array<IUser>>{
+    return this.httpClient.get<Array<IUser>>("assets/data/users.json")
   }
 
   createPost(){

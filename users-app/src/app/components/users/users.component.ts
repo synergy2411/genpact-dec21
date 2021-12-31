@@ -17,8 +17,11 @@ export class UsersComponent implements OnInit{
   ngOnInit(): void {
     // this.users = this.dataService.getData()
     this.dataService.getApiData()
-      .subscribe((result : Array<IUser>)=>{
-        this.users = result
+    // .subscribe(result => this.users = result)
+      .subscribe({
+        next : (result : Array<IUser>) => this.users = result,
+        error : err => console.error(err),
+        complete : () => console.log("[Completed]")
       })
   }
 

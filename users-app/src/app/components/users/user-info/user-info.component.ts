@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { IUser } from 'src/app/model/user.model';
+import { UserImageComponent } from '../user-image/user-image.component';
 
 @Component({
   selector: 'app-user-info',
@@ -8,4 +9,8 @@ import { IUser } from 'src/app/model/user.model';
 })
 export class UserInfoComponent {
   @Input() user : IUser;
+  userImg : UserImageComponent = new UserImageComponent();
+  ngOnInit(){
+
+  }
 }
