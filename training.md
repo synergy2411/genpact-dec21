@@ -272,4 +272,5 @@ notes.splice(position, 1)
 
 # RBAC - Role Based Access Control
 
-synergy2411@outlook.com
+# Build Command
+> ng build --prod
