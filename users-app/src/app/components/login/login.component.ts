@@ -19,5 +19,6 @@ export class LoginComponent implements OnInit {
     Password : ${form.value.password}
     `);
     this.router.navigate(["/users"])
+    localStorage.setItem("token", "MY_TOKEN")
   }
 }
