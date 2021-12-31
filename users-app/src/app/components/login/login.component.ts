@@ -14,6 +14,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {}
 
   onLogin(form: NgForm) {
+    debugger;
     console.log(`
     Username : ${form.value.username}
     Password : ${form.value.password}

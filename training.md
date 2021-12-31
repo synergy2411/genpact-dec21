@@ -271,3 +271,5 @@ notes.splice(position, 1)
 > ng g s services/request-interceptor
 
 # RBAC - Role Based Access Control
+
+synergy2411@outlook.com
