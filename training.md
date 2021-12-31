@@ -274,3 +274,11 @@ notes.splice(position, 1)
 
 # Build Command
 > ng build --prod
+
+# Web Reference
+- https://javascript.info/
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript
+- https://www.typescriptlang.org/
+- https://angular.io/
+- https://reactivex.io/
+- https://rxjs.dev/
