@@ -40,6 +40,10 @@ export const APP_ROUTES: Routes = [
   {
     path: 'life-cycle',
     component: LifeCycleDemoComponent,
+  },{
+    path : "lazy",
+    loadChildren : () => import("./modules/lazy/lazy.module")
+                          .then(m => m.LazyModule)
   },
   {
     path: 'product', // http://localhost:4200/product

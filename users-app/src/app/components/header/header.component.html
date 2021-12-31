@@ -20,6 +20,9 @@
         <a class="nav-link" [routerLink]="['product']">Product</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" [routerLink]="['lazy']">Lazy</a>
+      </li>
+      <li class="nav-item">
         <a class="btn btn-danger"
           *ngIf="isAuthenticated()"
           (click)="onLogout()">Logout</a>

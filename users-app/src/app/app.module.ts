@@ -23,6 +23,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { ProductComponent } from './components/product/product.component';
 import { OverviewComponent } from './components/product/overview/overview.component';
 import { SpecificationComponent } from './components/product/specification/specification.component';
+import { LazyModule } from './modules/lazy/lazy.module';
 
 
 @NgModule({
