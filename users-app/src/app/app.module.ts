@@ -1,4 +1,4 @@
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -15,6 +15,7 @@ import { UsersComponent } from './components/users/users.component';
 import { CountryCodePipe } from './pipes/country-code.pipe';
 import { ReversePipe } from './pipes/reverse.pipe';
 import { ObservableDemoComponent } from './components/observable-demo/observable-demo.component';
+import { RequestInterceptorService } from './services/request-interceptor.service';
 
 
 @NgModule({
@@ -38,7 +39,11 @@ import { ObservableDemoComponent } from './components/observable-demo/observable
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [ ],      // Register the services
+  providers: [ {
+    provide : HTTP_INTERCEPTORS,
+    useClass : RequestInterceptorService,
+    multi : true
+  } ],      // Register the services
   bootstrap: [AppComponent]   // Loads component on index.html
 })
 export class AppModule { }
