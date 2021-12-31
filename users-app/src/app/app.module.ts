@@ -16,6 +16,7 @@ import { CountryCodePipe } from './pipes/country-code.pipe';
 import { ReversePipe } from './pipes/reverse.pipe';
 import { ObservableDemoComponent } from './components/observable-demo/observable-demo.component';
 import { RequestInterceptorService } from './services/request-interceptor.service';
+import { ResponseInterceptorService } from './services/response-interceptor.service';
 
 
 @NgModule({
@@ -42,6 +43,10 @@ import { RequestInterceptorService } from './services/request-interceptor.servic
   providers: [ {
     provide : HTTP_INTERCEPTORS,
     useClass : RequestInterceptorService,
+    multi : true
+  },{
+    provide : HTTP_INTERCEPTORS,
+    useClass : ResponseInterceptorService,
     multi : true
   } ],      // Register the services
   bootstrap: [AppComponent]   // Loads component on index.html
