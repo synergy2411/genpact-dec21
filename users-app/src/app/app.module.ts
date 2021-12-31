@@ -2,6 +2,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { DirectiveDemoComponent } from './components/directive-demo/directive-demo.component';
@@ -17,6 +18,8 @@ import { ReversePipe } from './pipes/reverse.pipe';
 import { ObservableDemoComponent } from './components/observable-demo/observable-demo.component';
 import { RequestInterceptorService } from './services/request-interceptor.service';
 import { ResponseInterceptorService } from './services/response-interceptor.service';
+import { APP_ROUTES } from './app.routes';
+import { HeaderComponent } from './components/header/header.component';
 
 
 @NgModule({
@@ -32,13 +35,15 @@ import { ResponseInterceptorService } from './services/response-interceptor.serv
     ReversePipe,
     LoginComponent,
     RegisterComponent,
-    ObservableDemoComponent
+    ObservableDemoComponent,
+    HeaderComponent
   ],
   imports: [          // Module - built-in / Custom module
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(APP_ROUTES)
   ],
   providers: [ {
     provide : HTTP_INTERCEPTORS,
