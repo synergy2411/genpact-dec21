@@ -1,0 +1,16 @@
+<div *ngFor="let note of noteCollection" class="row">
+  <div class="col-6">
+    <app-note-item
+      [note]="note"
+      (onNoteItemSelected)="onSelectedNote($event)"
+    ></app-note-item>
+  </div>
+</div>
+
+<hr />
+
+<app-note-edit
+  [note]="selectedNote"
+  *ngIf="showEditNote"
+  (onClose)="showEditNote = false"
+></app-note-edit>

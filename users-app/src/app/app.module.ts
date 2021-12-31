@@ -24,6 +24,9 @@ import { ProductComponent } from './components/product/product.component';
 import { OverviewComponent } from './components/product/overview/overview.component';
 import { SpecificationComponent } from './components/product/specification/specification.component';
 import { LazyModule } from './modules/lazy/lazy.module';
+import { NotesComponent } from './components/notes/notes.component';
+import { NoteItemComponent } from './components/notes/note-item/note-item.component';
+import { NoteEditComponent } from './components/notes/note-edit/note-edit.component';
 
 
 @NgModule({
@@ -43,7 +46,10 @@ import { LazyModule } from './modules/lazy/lazy.module';
     HeaderComponent,
     ProductComponent,
     OverviewComponent,
-    SpecificationComponent
+    SpecificationComponent,
+    NotesComponent,
+    NoteItemComponent,
+    NoteEditComponent
   ],
   imports: [          // Module - built-in / Custom module
     BrowserModule,

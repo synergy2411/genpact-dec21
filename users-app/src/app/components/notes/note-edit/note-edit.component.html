@@ -1,0 +1,11 @@
+<div class="card">
+  <div class="card-header">
+    <h6 class="text-center">{{note.title | uppercase}}</h6>
+  </div>
+  <div class="card-body">
+    <input type="text" [(ngModel)] = "note.body">
+    <br>
+    <button class="btn btn-delete" (click)="onDelete()">DELETE</button>
+    <button class="btn btn-delete" (click)="onEdit()">EDIT</button>
+  </div>
+</div>
